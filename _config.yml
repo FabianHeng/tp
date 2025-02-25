@@ -1,0 +1,15 @@
+title: "ClientNest"
+theme: minima
+
+header_pages:
+  - UserGuide.md
+  - DeveloperGuide.md
+  - AboutUs.md
+
+markdown: kramdown
+
+repository: "AY2425S2-CS2103-F10-2/tp"
+github_icon: "images/github-icon.png"
+
+plugins:
+  - jemoji
