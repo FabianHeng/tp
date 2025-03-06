@@ -7,7 +7,6 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
         "fabian-heng": "Fabian Heng",
         "lee-de-en": "Lee De En",
         "teesha-basak": "Teesha Basak",
@@ -131,13 +130,13 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "clientnest": "ClientNest"
       },
       "headingKeywords": {}
     },
     {
-      "src": "team/johndoe.md",
-      "title": "John Doe's Project Portfolio Page",
+      "src": "team/fabianheng.md",
+      "title": "Lee De En's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
@@ -145,6 +144,22 @@
     },
     {
       "src": "team/leedeen01.md",
+      "title": "Lee De En's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/nightlyaffair.md",
+      "title": "Lee De En's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/teesha902.md",
       "title": "Lee De En's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
