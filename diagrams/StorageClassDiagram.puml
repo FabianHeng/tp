@@ -20,9 +20,24 @@ Class JsonAddressBookStorage
 Class JsonSerializableAddressBook
 Class JsonAdaptedPerson
 Class JsonAdaptedTag
+Class JsonAdaptedPremiumList
+Class JsonAdaptedPremium
+}
+package "PolicyBook Storage" #F4F6F6{
+Class "<<interface>>\nPolicyBookStorage" as PolicyBookStorage
+Class JsonPolicyBookStorage
+Class JsonSerializablePolicyBook
+Class JsonAdaptedPolicy
 }
 
+package "UserProfile Storage" #F4F6F6{
+Class "<<interface>>\nUserProfileStorage" as UserProfileStorage
+Class JsonUserProfileStorage
+Class JsonSerializableUserProfile
 }
+}
+
+
 
 Class HiddenOutside #FFFFFF
 HiddenOutside ..> Storage
@@ -30,14 +45,25 @@ HiddenOutside ..> Storage
 StorageManager .up.|> Storage
 StorageManager -up-> "1" UserPrefsStorage
 StorageManager -up-> "1" AddressBookStorage
+StorageManager -up-> "1" PolicyBookStorage
+StorageManager -up-> "1" UserProfileStorage
 
 Storage -left-|> UserPrefsStorage
 Storage -right-|> AddressBookStorage
+Storage -right-|> PolicyBookStorage
+Storage -left-|> UserProfileStorage
+
 
 JsonUserPrefsStorage .up.|> UserPrefsStorage
 JsonAddressBookStorage .up.|> AddressBookStorage
 JsonAddressBookStorage ..> JsonSerializableAddressBook
 JsonSerializableAddressBook --> "*" JsonAdaptedPerson
 JsonAdaptedPerson --> "*" JsonAdaptedTag
-
+JsonAdaptedPerson --> "1" JsonAdaptedPremiumList
+JsonAdaptedPremiumList --> "*" JsonAdaptedPremium
+JsonPolicyBookStorage .up.|> PolicyBookStorage
+JsonPolicyBookStorage ..> JsonSerializablePolicyBook
+JsonSerializablePolicyBook --> "*" JsonAdaptedPolicy
+JsonUserProfileStorage .up.|> UserProfileStorage
+JsonUserProfileStorage ..> JsonSerializableUserProfile
 @enduml

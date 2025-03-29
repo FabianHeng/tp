@@ -1,0 +1,20 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+
+AddressBook *-down-> "1" UniquePersonList
+UniquePersonList -right-> Person
+
+Person -up-> "*" Tag
+
+Person *--> "1" Name
+Person *--> "1" Phone
+Person *--> "1" Email
+Person *--> "1" Address
+Person *--> "1" Birthday
+Person *-right-> "1" PremiumList
+PremiumList *--> "*" Premium
+
+@enduml

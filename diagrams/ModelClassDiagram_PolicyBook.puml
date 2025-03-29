@@ -1,0 +1,17 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+
+' PolicyBook Composition
+PolicyBook *-down-> "1" UniquePolicyList
+UniquePolicyList -right-> Policy
+
+' Policy fields
+Policy *--> "1" PolicyName
+Policy *--> "1" PolicyNumber
+Policy *--> "1" PolicyLink
+Policy *--> "1" ProviderCompany
+
+@enduml
