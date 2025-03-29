@@ -11,10 +11,15 @@ Class UiManager
 Class MainWindow
 Class HelpWindow
 Class ResultDisplay
-Class PersonListPanel
-Class PersonCard
 Class StatusBarFooter
 Class CommandBox
+Class UpcomingBirthdaysPanel
+Class UpcomingBirthdayCard
+Class UserProfilePanel
+Class PersonListPanel
+Class PersonCard
+Class PolicyListPanel
+Class PolicyCard
 }
 
 package Model <<Rectangle>> {
@@ -32,11 +37,17 @@ UiManager .left.|> Ui
 UiManager -down-> "1" MainWindow
 MainWindow *-down->  "1" CommandBox
 MainWindow *-down-> "1" ResultDisplay
-MainWindow *-down-> "1" PersonListPanel
 MainWindow *-down-> "1" StatusBarFooter
+MainWindow *-down-> "1" UpcomingBirthdaysPanel
+MainWindow *-down-> "1" UserProfilePanel
+MainWindow *-down-> "1" PersonListPanel
+MainWindow *-down-> "1" PolicyListPanel
 MainWindow --> "0..1" HelpWindow
 
 PersonListPanel -down-> "*" PersonCard
+UpcomingBirthdaysPanel -down-> "*" UpcomingBirthdayCard
+UpcomingBirthdayCard -down-> "*" PersonCard
+PolicyListPanel -down-> "*" PolicyCard
 
 MainWindow -left-|> UiPart
 
@@ -46,15 +57,23 @@ PersonListPanel --|> UiPart
 PersonCard --|> UiPart
 StatusBarFooter --|> UiPart
 HelpWindow --|> UiPart
+UpcomingBirthdaysPanel --|> UiPart
+UpcomingBirthdayCard --|> UiPart
+PolicyListPanel --|> UiPart
+PolicyCard --|> UiPart
 
 PersonCard ..> Model
+PolicyCard ..> Model
 UiManager -right-> Logic
 MainWindow -left-> Logic
 
-PersonListPanel -[hidden]left- HelpWindow
 HelpWindow -[hidden]left- CommandBox
 CommandBox -[hidden]left- ResultDisplay
 ResultDisplay -[hidden]left- StatusBarFooter
+StatusBarFooter -[hidden]left- UpcomingBirthdaysPanel
+UpcomingBirthdaysPanel -[hidden]left- UserProfilePanel
+UserProfilePanel -[hidden]left- PolicyListPanel
+PolicyListPanel -[hidden]left- PersonListPanel
 
 MainWindow -[hidden]-|> UiPart
 @enduml
