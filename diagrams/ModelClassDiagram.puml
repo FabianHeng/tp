@@ -19,6 +19,9 @@ Class Email
 Class Name
 Class Phone
 Class Tag
+Class Birthday
+Class PremiumList
+Class Premium
 
 Class I #FFFFFF
 }
@@ -42,6 +45,9 @@ Person *--> Phone
 Person *--> Email
 Person *--> Address
 Person *--> "*" Tag
+Person *--> Birthday
+Person *--> "1" PremiumList
+PremiumList *--> "*" Premium
 
 Person -[hidden]up--> I
 UniquePersonList -[hidden]right-> I
