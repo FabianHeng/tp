@@ -48,6 +48,7 @@
         "logic-component": "Logic component",
         "model-component": "Model component",
         "storage-component": "Storage component",
+        "task-manager": "Task Manager",
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
@@ -93,6 +94,29 @@
       "headingKeywords": {}
     },
     {
+      "src": "TaskManagerUserGuide.md",
+      "headings": {
+        "taskmanager-user-guide": "TaskManager User Guide",
+        "launching-the-taskmanager": "Launching the TaskManager",
+        "notes-about-the-command-format": "Notes about the command format",
+        "features": "Features",
+        "adding-a-to-do-task-todo": "Adding a To-Do Task: todo",
+        "adding-a-deadline-task-deadline": "Adding a Deadline Task: deadline",
+        "adding-an-event-task-event": "Adding an Event Task: event",
+        "marking-a-task-as-done-mark": "Marking a Task as Done: mark",
+        "marking-a-task-as-not-done-unmark": "Marking a Task as Not Done: unmark",
+        "deleting-a-task-delete": "Deleting a Task: delete",
+        "finding-tasks-by-keyword-find": "Finding Tasks by Keyword: find",
+        "viewing-tasks-on-a-specific-day-agenda": "Viewing Tasks on a Specific Day: agenda",
+        "listing-all-tasks-list": "Listing All Tasks: list",
+        "viewing-help-help": "Viewing Help: help",
+        "exiting-the-taskmanager-exit": "Exiting the TaskManager: exit",
+        "saving-the-data": "Saving the data",
+        "command-summary-for-taskmanager": "Command summary for TaskManager"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "Testing.md",
       "title": "Testing guide",
       "headings": {
@@ -114,17 +138,23 @@
         "editing-a-person-edit": "Editing a person : edit",
         "locating-persons-by-name-find": "Locating persons by name: find",
         "deleting-a-person-delete": "Deleting a person : delete",
-        "clearing-all-entries-clear": "Clearing all entries : clear",
+        "adding-a-policy-addpolicy": "Adding a policy: addpolicy",
+        "listing-all-policies-listpolicy": "Listing all policies : listpolicy",
+        "editing-a-policy-editpolicy": "Editing a policy : editpolicy",
+        "locating-policy-by-name-findpolicy": "Locating policy by name: findpolicy",
+        "deleting-a-policy-deletepolicy": "Deleting a policy : deletepolicy",
+        "clearing-all-person-clear": "Clearing all person : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
-        "upcoming-birthdays-view-coming-in-v2-0": "Upcoming Birthdays View [coming in v2.0]",
         "editing-user-profile-profile": "Editing User Profile : profile",
         "saving-the-data-2": "Saving the data",
         "editing-the-data-file-2": "Editing the data file",
+        "upcoming-birthdays-panel": "Upcoming Birthdays Panel",
+        "viewing-and-managing-tasks-taskmanager": "Viewing and Managing Tasks: TaskManager",
         "faq": "FAQ",
         "known-issues": "Known issues",
-        "command-summary": "Command summary"
+        "command-summary-for-clientnest": "Command summary for ClientNest"
       },
       "headingKeywords": {}
     },

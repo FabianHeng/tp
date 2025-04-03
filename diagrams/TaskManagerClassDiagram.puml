@@ -1,0 +1,38 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor TASK_COLOR_T3
+skinparam classBackgroundColor TASK_COLOR
+
+
+package TaskManager as TaskManager {
+class TaskStorage <<static>>
+
+TaskManager --> "1" TaskList
+TaskManager --> TaskStorage
+TaskStorage --> TaskList : <<stores, updates>>
+TaskList --> "*" Task : <<manages>>
+TaskManager --> XYZTaskCommand
+XYZTaskCommand --> TaskList : <<can modify>>
+note bottom of XYZTaskCommand: AddTask, DeleteTask, \n Mark, Unmark etc
+
+package taskui as taskui {
+}
+
+TaskManager -left-> taskui
+
+
+Task <|-- ToDo
+Task <|-- Deadline
+Task <|-- Event
+}
+
+Class HiddenOutside #FFFFFF
+HiddenOutside ..> XYZTaskCommand
+
+package ui as ui {
+}
+
+taskui --> ui
+note top of ui : ClientNest Ui
+@enduml

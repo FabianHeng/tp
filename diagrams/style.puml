@@ -31,6 +31,12 @@
 !define STORAGE_COLOR_T3 #806600
 !define STORAGE_COLOR_T2 #544400
 
+!define TASK_COLOR #6C1D89
+!define TASK_COLOR_T1 #C68CDB
+!define TASK_COLOR_T2 #9F50C3
+!define TASK_COLOR_T3 #52116E
+!define TASK_COLOR_T4 #370A4D
+
 !define USER_COLOR #000000
 
 skinparam Package {
