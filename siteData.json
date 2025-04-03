@@ -37,7 +37,6 @@
     },
     {
       "src": "DeveloperGuide.md",
-      "title": "Developer Guide",
       "headings": {
         "ab-3-developer-guide": "AB-3 Developer Guide",
         "acknowledgements": "Acknowledgements",
@@ -51,6 +50,7 @@
         "task-manager": "Task Manager",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "premium-management-feature": "Premium Management Feature",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
@@ -63,6 +63,9 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
+        "adding-a-premium-to-a-person": "Adding a premium to a person",
+        "editing-a-premium-for-a-person": "Editing a premium for a person",
+        "deleting-a-premium-from-a-person": "Deleting a premium from a person",
         "saving-data": "Saving data"
       },
       "headingKeywords": {}
@@ -136,6 +139,9 @@
         "adding-a-person-add": "Adding a person: add",
         "listing-all-persons-list": "Listing all persons : list",
         "editing-a-person-edit": "Editing a person : edit",
+        "adding-a-premium-to-a-person-addpr": "Adding a premium to a person: addpr",
+        "editing-a-premium-for-a-person-editpr": "Editing a premium for a person: editpr",
+        "deleting-a-premium-from-a-person-deletepr": "Deleting a premium from a person: deletepr",
         "locating-persons-by-name-find": "Locating persons by name: find",
         "deleting-a-person-delete": "Deleting a person : delete",
         "adding-a-policy-addpolicy": "Adding a policy: addpolicy",
