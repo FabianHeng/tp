@@ -3,14 +3,15 @@
   "pages": [
     {
       "src": "AboutUs.md",
-      "title": "About Us",
       "headings": {
         "about-us": "About Us",
-        "project-team": "Project team",
+        "project-team": "🛠️ Project Team",
         "fabian-heng": "Fabian Heng",
         "lee-de-en": "Lee De En",
         "teesha-basak": "Teesha Basak",
-        "nithvin-leelakrishnan": "Nithvin Leelakrishnan"
+        "nithvin-leelakrishnan": "Nithvin Leelakrishnan",
+        "our-vision": "🌍 Our Vision",
+        "get-in-touch": "💬 Get In Touch"
       },
       "headingKeywords": {}
     },
