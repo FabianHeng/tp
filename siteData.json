@@ -17,7 +17,6 @@
     },
     {
       "src": "Configuration.md",
-      "title": "Configuration guide",
       "headings": {
         "configuration-guide": "Configuration guide"
       },
@@ -25,7 +24,6 @@
     },
     {
       "src": "DevOps.md",
-      "title": "DevOps guide",
       "headings": {
         "devops-guide": "DevOps guide",
         "build-automation": "Build automation",
@@ -38,7 +36,6 @@
     },
     {
       "src": "DeveloperGuide.md",
-      "title": "Developer Guide",
       "headings": {
         "clientnest-developer-guide": "ClientNest Developer Guide",
         "acknowledgements": "Acknowledgements",
@@ -74,7 +71,6 @@
     },
     {
       "src": "Documentation.md",
-      "title": "Documentation guide",
       "headings": {
         "documentation-guide": "Documentation Guide"
       },
@@ -82,7 +78,6 @@
     },
     {
       "src": "Logging.md",
-      "title": "Logging guide",
       "headings": {
         "logging-guide": "Logging guide"
       },
@@ -90,7 +85,6 @@
     },
     {
       "src": "SettingUp.md",
-      "title": "Setting up and getting started",
       "headings": {
         "setting-up-and-getting-started": "Setting up and getting started",
         "setting-up-the-project-in-your-computer": "Setting up the project in your computer",
@@ -123,7 +117,6 @@
     },
     {
       "src": "Testing.md",
-      "title": "Testing guide",
       "headings": {
         "testing-guide": "Testing guide",
         "running-tests": "Running tests",
@@ -166,9 +159,12 @@
     },
     {
       "src": "index.md",
-      "title": "",
       "headings": {
-        "clientnest": "ClientNest"
+        "clientnest": "🏠 ClientNest",
+        "quick-start": "🚀 Quick Start",
+        "for-developers": "👨‍💻 For Developers",
+        "additional-information": "🤖 Additional Information",
+        "acknowledgements": "📚 Acknowledgements"
       },
       "headingKeywords": {}
     },
