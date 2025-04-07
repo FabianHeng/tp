@@ -53,6 +53,8 @@
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "planned-enhancemnet": "Planned Enhancemnet",
         "policy-based-premium-management": "Policy-Based Premium Management",
+        "windows-compatibility-issues": "Windows Compatibility Issues",
+        "inflexible-inputs-for-commands-field": "Inflexible Inputs for Commands field",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -61,12 +63,12 @@
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
-        "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
-        "adding-a-premium-to-a-person": "Adding a premium to a person",
-        "editing-a-premium-for-a-person": "Editing a premium for a person",
-        "deleting-a-premium-from-a-person": "Deleting a premium from a person",
-        "saving-data": "Saving data"
+        "launch-and-shutdown": "Launch and Shutdown",
+        "deleting-a-person": "Deleting A Person",
+        "adding-a-premium-to-a-person": "Adding A Premium To A Person",
+        "editing-a-premium-for-a-person": "Editing A Premium For A Person",
+        "deleting-a-premium-from-a-person": "Deleting A Premium From A Person",
+        "saving-data": "Saving Data"
       },
       "headingKeywords": {}
     },
