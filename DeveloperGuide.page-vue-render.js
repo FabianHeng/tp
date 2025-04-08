@@ -482,6 +482,6 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted d
 with(this){return _c('ul',[_c('li',[_c('p',[_v("2b. The premium format is invalid.")]),_v(" "),_c('ul',[_c('li',[_v("2b1. ClientNest shows an error message: \"At least one Premium to add must be provided.\"")]),_v(" "),_c('li',[_v("2b2. Use case resumes at step 1.")])])]),_v(" "),_c('li',[_c('p',[_v("3a. The premium already exists for the client.")]),_v(" "),_c('ul',[_c('li',[_v("3a1. ClientNest shows an error message: \"This premium already exists in the address book.\"")]),_v(" "),_c('li',[_v("3a2. Use case ends.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Mon, 7 Apr 2025, 23:48:32 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Tue, 8 Apr 2025, 12:03:16 GMT+8]")])])])}
 }];
   
