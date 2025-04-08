@@ -36,10 +36,4 @@ Given below are my contributions to the project.
     * Added implementation for the feature `profile`.
     * Did cosmetic tweaks to existing documentation of `Ui.png`, `Help`, `Find`.
   * Developer Guide:
-    * Added UML Diagram for `Ui`.
-
-* **Community**:
-  * PRs reviewed (with non-trivial review comments): [\#12](), [\#32](), [\#19](), [\#42]()
-  * Contributed to forum discussions (examples: [1](), [2](), [3](), [4]())
-  * Reported bugs and suggestions for other teams in the class (examples: [1](), [2](), [3]())
-  * Some parts of the history feature I added was adopted by several other class mates ([1](), [2]())
+    * Added and edited PUML Diagram for `Ui`.
