@@ -36,7 +36,7 @@
   - [Deleting A Premium From A Person](#deleting-a-premium-from-a-person)
   - [Saving Data](#saving-data) 
   - [Deleting A Premium From A Person](#deleting-a-premium-from-a-person)
-- [Planned Enhancement](#planned-enhancements)
+- [Planned Enhancements](#planned-enhancements)
     - [Policy-Based Premium Management](#policy-based-premium-management)
         - [Problem Statement](#problem-statement)
         - [Solution](#solution)
