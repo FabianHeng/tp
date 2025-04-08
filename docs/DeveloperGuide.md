@@ -314,56 +314,6 @@ The following activity diagram summarizes what happens when a user executes a ne
 
 --------------------------------------------------------------------------------------------------------------------
 
-## **Planned Enhancemnet**
-
-### Policy-Based Premium Management
-
-#### Problem Statement:
-
-The system currently supports two separate operations: assigning premiums to individuals via the addpr command and creating policies using the addpolicy command. However, these functionalities operate in isolation—premiums and policies are managed as independent entities. This separation allows premiums to be assigned without validating the existence of a corresponding policy in the policybook. Such a design can result in premiums being linked to non-existent or invalid policies, potentially causing data inconsistencies and user confusion.
-
-#### Solution:
-
-To enforce consistency between premiums and policies, the following enhancements should be made to the addpr command:
-
-1. Add policy_id as a Required Field in addpr
-2. Validate Policy Existence Before Adding a Premium
-3. Handle Outcomes with Clear User Feedback: 
-    * If the specified policy_id does not exist:
-        * Reject the command, do not add the premium
-        * Provide a clear error message: "Policy ID POL123 not found. Please create the policy first using addpolicy."
-    * Else the specified policy_id exists:
-        * Proceed with adding the premium to the person under the given policy
-        * Provide confirmation: "Premium with Policy ID POL123 has been added"
-
-### Windows Compatibility Issues
-
-#### Problem Statement:
-
-We're encountering an issue where, upon fullscreening the application on Windows, certain UI elements (such as the command box) end up partially hidden behind the Windows taskbar. This seems to be specific to how fullscreen dimensions are handled on Windows systems. Unfortunately, our team currently doesn't have access to a Windows environment, so we're unable to reproduce and resolve the bug directly.
-
-#### Solution:
-
-Possible solution our team can do in the future:
-1. Download windows virtual machine and use it to test our product
-
-### Inflexible Inputs for Commands field
-
-#### Problem Statement:
-
-The Command input field currently enforces strict validation rules, including restrictions on special characters in certain fields. As a result, commands that include characters users might reasonably expect to use (e.g., punctuation in names or notes) are rejected. This leads to a poor user experience, as users may find the behavior unintuitive and frustrating—especially if they are not familiar with the exact syntax or limitations. 
-
-Some examples but not limited are:
-1. Names with special characters `Anne-Marie`
-2. Policy Name with special characters `Health & Safety`
-3. Policy Number with special characters `#102`
-
-#### Solution:
-
-* Relax the validation rules by updating regrex to handle more useful cases
-
---------------------------------------------------------------------------------------------------------------------
-
 ## **Documentation, logging, testing, configuration, dev-ops**
 
 * [Documentation guide](Documentation.md)
@@ -639,5 +589,55 @@ testers are expected to do more *exploratory* testing.
 
        1. Other incorrect commands to try: `deletepr`, `deletepr 1`, `deletepr 1 pr/`, `deletepr x pr/LifeShield` (where x is larger than the list size)<br>
           Expected: Similar to previous error cases.
+
+---
+
+## **Planned Enhancements**
+
+### Policy-Based Premium Management
+
+#### Problem Statement:
+
+The system currently supports two separate operations: assigning premiums to individuals via the `addpr` command and creating policies using the `addpolicy` command. However, these functionalities operate in isolation—premiums and policies are managed as independent entities. This separation allows premiums to be assigned without validating the existence of a corresponding policy in the policy book. Such a design can result in premiums being linked to non-existent or invalid policies, potentially causing data inconsistencies and user confusion.
+
+#### Solution:
+
+To enforce consistency between premiums and policies, the following enhancements should be made to the `addpr` command:
+
+1. Add `policy_id` as a Required Field in `addpr`
+2. Validate Policy Existence Before Adding a Premium
+3. Handle Outcomes with Clear User Feedback:
+    * If the specified `policy_id` does not exist:
+        * Reject the command, do not add the premium
+        * Provide a clear error message: "`Policy ID POL123 not found. Please create the policy first using addpolicy.`"
+    * Else the specified `policy_id` exists:
+        * Proceed with adding the premium to the person under the given policy
+        * Provide confirmation: "`Premium with Policy ID POL123 has been added.`"
+
+### Windows Compatibility Issues
+
+#### Problem Statement:
+
+We're encountering an issue where, upon full screening the application on Windows, certain UI elements (such as the command box) end up partially hidden behind the Windows taskbar. This seems to be specific to how fullscreen dimensions are handled on Windows systems. Unfortunately, our team currently doesn't have access to a Windows environment, so we're unable to reproduce and resolve the bug directly.
+
+#### Solution:
+
+Possible solution our team can do in the future:
+1. Download windows virtual machine and use it to test our product
+
+### Inflexible Inputs for Commands field
+
+#### Problem Statement:
+
+The Command input field currently enforces strict validation rules, including restrictions on special characters in certain fields. As a result, commands that include characters users might reasonably expect to use (e.g., punctuation in names or notes) are rejected. This leads to a poor user experience, as users may find the behavior unintuitive and frustrating — especially if they are not familiar with the exact syntax or limitations.
+
+Some examples but not limited are:
+1. Names with special characters `Anne-Marie`, `Amélie`.
+2. Policy Name with special characters `Health & Safety`
+3. Policy Number with special characters `#102`
+
+#### Solution:
+
+* Relax the validation rules by updating regex to handle more useful cases
 
 ---
