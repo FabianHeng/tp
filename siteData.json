@@ -50,10 +50,6 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
-        "planned-enhancemnet": "Planned Enhancemnet",
-        "policy-based-premium-management": "Policy-Based Premium Management",
-        "windows-compatibility-issues": "Windows Compatibility Issues",
-        "inflexible-inputs-for-commands-field": "Inflexible Inputs for Commands field",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -66,7 +62,11 @@
         "deleting-a-person": "Deleting A Person",
         "adding-a-premium-to-a-person": "Adding A Premium To A Person",
         "editing-a-premium-for-a-person": "Editing A Premium For A Person",
-        "deleting-a-premium-from-a-person": "Deleting A Premium From A Person"
+        "deleting-a-premium-from-a-person": "Deleting A Premium From A Person",
+        "planned-enhancements": "Planned Enhancements",
+        "policy-based-premium-management": "Policy-Based Premium Management",
+        "windows-compatibility-issues": "Windows Compatibility Issues",
+        "inflexible-inputs-for-commands-field": "Inflexible Inputs for Commands field"
       },
       "headingKeywords": {}
     },
